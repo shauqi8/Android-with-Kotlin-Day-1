@@ -1,0 +1,271 @@
+fun main() {
+2
+    println("Hello, world!!!") //println (print & enter new line)
+3
+    
+4
+    
+5
+    //val (value) number can just initialize
+6
+    //val (value) string initialize the value use ""
+7
+    //val will be constant after initialize > once initialize it cannot be change anymore
+8
+    //var (variable) for variable even after initialize > still able to change the value
+9
+   
+10
+    val x = 1
+11
+    val y = 3
+12
+   
+13
+    println(x)
+14
+    
+15
+    val z = x+y
+16
+    println (z)
+17
+    
+18
+    val a = "hai akmal"
+19
+    println(a)
+20
+    
+21
+    var b = "hai akmal"
+22
+    b = "hai shauqi"
+23
+    println (b)
+24
+    
+25
+    //Data type (String,char)
+26
+    //String > for sentences ""
+27
+    //char > for abjad ''
+28
+    //USE : for DATA TYPE
+29
+    //combining value use +
+30
+    
+31
+    val home:String = "Klang"
+32
+    println(home)
+33
+    
+34
+    val jantina:Char = 'L'
+35
+    println(jantina)
+36
+    
+37
+    val message00 = "Your home address " +home
+38
+    println(message00)
+39
+    
+40
+    val message01 = "Your home address $home"
+41
+    println(message01)
+42
+    
+43
+    
+44
+     // Integer arithmetic
+45
+    val intNum1 = 10
+46
+    val intNum2 = 5
+47
+    
+48
+    val intMultiplyResult = intNum1 * intNum2
+49
+    println("Integer Multiplication Result: $intMultiplyResult")
+50
+    
+51
+    val intMinusResult = intNum1 - intNum2
+52
+    println("Integer Subtraction Result: $intMinusResult")
+53
+    
+54
+    val intPlusResult = intNum1 + intNum2
+55
+    println("Integer Addition Result: $intPlusResult")
+56
+    
+57
+    val intDivideResult = intNum1 / intNum2
+58
+    println("Integer Division Result: $intDivideResult")
+59
+    
+60
+    val intModuloResult = intNum1 % intNum2
+61
+    println("Integer Modulo Result: $intModuloResult")
+62
+    
+63
+    // Double arithmetic
+64
+    val doubleNum1 = 10.0
+65
+    val doubleNum2 = 5.0
+66
+    
+67
+    val doubleMultiplyResult = doubleNum1 * doubleNum2
+68
+    println("Double Multiplication Result: $doubleMultiplyResult")
+69
+    
+70
+    val doubleMinusResult = doubleNum1 - doubleNum2
+71
+    println("Double Subtraction Result: $doubleMinusResult")
+72
+    
+73
+    val doublePlusResult = doubleNum1 + doubleNum2
+74
+    println("Double Addition Result: $doublePlusResult")
+75
+    
+76
+    val doubleDivideResult = doubleNum1 / doubleNum2
+77
+    println("Double Division Result: $doubleDivideResult")
+78
+    
+79
+    //Modulo operation is not applicable for double data types
+80
+    
+81
+    //boolean variables
+82
+    val isSunny: Boolean = true
+83
+    val isWarm: Boolean = true
+84
+    val isRaining: Boolean = false
+85
+    
+86
+    //Using boolean variables in conditional statements
+87
+    if (isSunny) {
+88
+        println("It's sunny outside!")
+89
+    } else {
+90
+        println("It's not sunny outside.")
+91
+    }
+92
+    
+93
+    if (isRaining) {
+94
+        println("It's raining outside.")
+95
+    } else {
+96
+        println("It's not raining outside.")
+97
+    }
+98
+    
+99
+    
+100
+     //Using boolean variables with logical operators
+101
+    if (isSunny && isWarm) {
+102
+        println("It's sunny and warm outside!")
+103
+    } else {
+104
+        println("It's either not sunny or not warm outside.")
+105
+    }
+106
+    
+107
+    if (isSunny || isRaining) {
+108
+        println("It's either sunny or raining outside.")
+109
+    } else {
+110
+        println("It's neither sunny nor raining outside.")
+111
+    }
+112
+    
+113
+    println (!isWarm)
+114
+    
+115
+    
+116
+     //Creating a simple array
+117
+    val numbers = arrayOf(10, 20, 30, 40, 50)
+118
+    
+119
+    //Printing the values at index 0 and 1
+120
+    println("Value at index 0: ${numbers[0]}")
+121
+    println("Value at index 1: ${numbers[1]}")
+122
+    
+123
+    //Printing the total size of the array
+124
+    println("Total size of the array: ${numbers.size}")
+125
+    
+126
+    var childAge = 17
+127
+    var parent = false
+128
+    
+129
+    when {
+130
+    childAge < 13 -> println("You cannot watch movie")
+131
+    childAge < 18 && parent == false -> println("You cannot watch the movie")
+132
+    childAge < 18 && parent == true -> println("You can watch the movie")
+133
+    else -> println("You can watch the movie")
+134
+    }
+135
+    
+136
+}
